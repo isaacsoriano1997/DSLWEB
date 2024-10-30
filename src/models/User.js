@@ -1,5 +1,5 @@
 class User{
-    static tableName ='usuario';
+    static tableName ='users';
 
     constructor(id, nombre, email){
         this.id = id;

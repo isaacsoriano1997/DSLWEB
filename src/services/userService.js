@@ -1,11 +1,10 @@
 const userRepository = require('../repositories/userRepository');
-const UserRepository = require('../repositories/userRepository');
 class UserService{
     getAllUsers(){
         return userRepository.findAll();
     }
     getUserById(id){
-        return userRepository.findById();
+        return userRepository.findById(id);
     }
     createUser(userData){
         return userRepository.create(userData);
